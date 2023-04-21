@@ -1,0 +1,12 @@
+* seL4 helloworld demo
+
+* build
+#+begin_src shell
+  $ git clone https://github.com/ooops-t/seL4-demo.git
+  $ git submodule update --init
+  $ mkdir build
+  $ cd build/
+  $ ../init-build.sh -DPLATFORM=x86_64
+  $ ninja
+  $ ./simulate # use `ctrl-a x` to exit
+#+end_src
